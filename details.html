@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Mikart</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">Mikart</a>
+				<button
+					class="navbar-toggler"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item px-2">
+							<a href="index.html" class="nav-link">Dashboard</a>
+						</li>
+						<li class="nav-item px-2">
+							<a href="posts.html" class="nav-link">Posts</a>
+						</li>
+						<li class="nav-item px-2">
+							<a href="categories.html" class="nav-link"
+								>Categories</a
+							>
+						</li>
+						<li class="nav-item px-2">
+							<a href="users.html" class="nav-link">Users</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item dropdown mr-3">
+							<a
+								href="#"
+								class="nav-link dropdown-toggle"
+								data-bs-toggle="dropdown"
+							>
+								<i class="fa fa-user"></i> Welcome Sunfliz
+							</a>
+							<div class="dropdown-menu">
+								<a href="profile.html" class="dropdown-item">
+									<i class="fa fa-user-circle"></i> Profile
+								</a>
+								<a href="settings.html" class="dropdown-item">
+									<i class="fa fa-cog"></i> Settings
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="login.html" class="nav-link">
+								<i class="fa fa-user-times"></i> Logout
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<header id="main-header" class="py-2 bg-primary text-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Post One</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- ACTIONS -->
+		<section id="actions" class="py-4 mb-4 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="d-grid">
+							<a href="index.html" class="btn btn-light">
+								<i class="fa fa-arrow-left"></i> Back To
+								Dashboard
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="d-grid">
+							<a href="index.html" class="btn btn-success">
+								<i class="fa fa-plus"></i> Save Changes
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="d-grid">
+							<a href="index.html" class="btn btn-danger">
+								<i class="fa fa-trash"></i> Delete Posts
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- DETAILS -->
+		<section id="details">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card-header">
+								<h4>Edit posts</h4>
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="form-group mb-3">
+										<label for="title">Title</label>
+										<input
+											type="text"
+											class="form-control"
+											value="Post One"
+										/>
+									</div>
+									<div class="form-group mb-3">
+										<label for="category">Category</label>
+										<select class="form-control">
+											<option value="" selected>
+												Web Development
+											</option>
+											<option value="">
+												Tech Gadget
+											</option>
+											<option value="">Business</option>
+											<option value="">
+												Health & Wellness
+											</option>
+										</select>
+									</div>
+									<div class="form-group mb-3">
+										<label for="image">Upload Image</label>
+										<div class="input-group">
+											<input
+												type="file"
+												class="form-control"
+												id="image"
+											/>
+											<label
+												class="input-group-text"
+												for="image"
+												>Upload</label
+											>
+										</div>
+										<small class="form-text text-muted"
+											>Max Size 3mb</small
+										>
+									</div>
+									<div class="form-group">
+										<label for="body">Body</label>
+										<textarea
+											id="editor"
+											class="form-control"
+										>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quaerat aliquid, maxime eos et error dignissimos nisi corporis eaque! Aperiam accusantium nihil placeat, dolorum nobis, omnis deserunt reiciendis adipisci, voluptatibus exercitationem dolore velit. Soluta exercitationem fuga excepturi cum labore, fugiat porro maxime similique, autem officiis quas vel est officia aspernatur.</textarea
+										>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer id="main-footer" class="bg-dark text-white p-5 mt-5">
+			<div class="row">
+				<div class="col">
+					<p class="lead text-center">
+						Copyright &copy; <span id="year"></span>
+						Mikart
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- MODALS -->
+
+		<!-- ADD POST MODAL -->
+		<div class="modal fade" id="addPostModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-primary text-white">
+						<h5 class="modal-title">Add Post</h5>
+						<button
+							class="btn-close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group mb-3">
+								<label for="title">Title</label>
+								<input type="text" class="form-control" />
+							</div>
+							<div class="form-group mb-3">
+								<label for="category">Category</label>
+								<select class="form-control">
+									<option value="">Web Development</option>
+									<option value="">Tech Gadget</option>
+									<option value="">Business</option>
+									<option value="">Health & Wellness</option>
+								</select>
+							</div>
+							<div class="form-group mb-3">
+								<label for="image">Upload Image</label>
+								<div class="input-group">
+									<input
+										type="file"
+										class="form-control"
+										id="image"
+									/>
+									<label class="input-group-text" for="image"
+										>Upload</label
+									>
+								</div>
+								<small class="form-text text-muted"
+									>Max Size 3mb</small
+								>
+							</div>
+							<div class="form-group">
+								<label for="body">Body</label>
+								<textarea
+									id="editor"
+									class="form-control"
+								></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-bs-dismiss="modal">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ADD CATEGORY MODAL -->
+		<div class="modal fade" id="addCategoryModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-success text-white">
+						<h5 class="modal-title">Add Category</h5>
+						<button
+							class="btn-close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group mb-3">
+								<label for="title">Title</label>
+								<input type="text" class="form-control" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success" data-bs-dismiss="modal">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ADD USER MODAL -->
+		<div class="modal fade" id="addUserModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-warning text-white">
+						<h5 class="modal-title">Add Category</h5>
+						<button
+							class="btn-close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group mb-3">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" />
+							</div>
+							<div class="form-group mb-3">
+								<label for="email">Email</label>
+								<input type="text" class="form-control" />
+							</div>
+							<div class="form-group mb-3">
+								<label for="Password">Password</label>
+								<input type="password" class="form-control" />
+							</div>
+							<div class="form-group mb-3">
+								<label for="Password2">Confirm Password</label>
+								<input type="password" class="form-control" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-warning" data-bs-dismiss="modal">
+							Save Changes
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JAVA SCRIPTS -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+
+		<script>
+			//Get current year for the copyright
+			$('#year').text(new Date().getFullYear());
+
+			ClassicEditor.create(document.querySelector('#editor'))
+				.then((editor) => {
+					console.log(editor);
+				})
+				.catch((error) => {
+					console.error(error);
+				});
+		</script>
+	</body>
+</html>

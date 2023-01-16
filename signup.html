@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Mikart</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">Mikart</a>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<header id="main-header" class="py-2 bg-primary text-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1><i class="fa fa-user"></i> Mikart Admin</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- ACTIONS -->
+		<section id="actions" class="py-4 mb-4 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 offset-md-3"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SIGNUP -->
+		<section id="signup">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 mx-auto">
+						<div class="card">
+							<div class="card-header">
+								<h4>Create Account</h4>
+							</div>
+							<div class="card-body">
+								<form action="index.html">
+									<div class="form-group mb-3">
+										<label for="name">First Name</label>
+										<input
+											type="text"
+											class="form-control"
+										/>
+									</div>
+									<div class="form-group mb-3">
+										<label for="name">Last Name</label>
+										<input
+											type="text"
+											class="form-control"
+										/>
+									</div>
+									<div class="form-group mb-3">
+										<label for="email">Email</label>
+										<input
+											type="email"
+											class="form-control"
+										/>
+									</div>
+									<div class="form-group mb-3">
+										<label for="email">Password</label>
+										<input
+											type="password"
+											class="form-control"
+										/>
+									</div>
+									<div class="form-group mb-3">
+										<label for="email"
+											>Confirm Password</label
+										>
+										<input
+											type="password"
+											class="form-control"
+										/>
+									</div>
+									<div class="d-grid">
+										<input
+											type="submit"
+											value="SignUp"
+											class="btn btn-primary"
+										/>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer id="main-footer" class="bg-dark text-white p-5 mt-5">
+			<div class="row">
+				<div class="col">
+					<p class="lead text-center">
+						Copyright &copy; <span id="year"></span>
+						Mikart
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JAVA SCRIPTS -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			//Get current year for the copyright
+			$('#year').text(new Date().getFullYear());
+		</script>
+	</body>
+</html>
